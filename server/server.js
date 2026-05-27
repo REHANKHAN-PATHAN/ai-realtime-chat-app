@@ -49,18 +49,11 @@ express()
 const server =
 http.createServer(app)
 
-const io =
-new Server(server,{
-
-cors:{
-origin:
-"http://localhost:5173",
-
-methods:[
-"GET",
-"POST"
-]
-}
+const io = new Server(server,{
+  cors:{
+    origin:"https://ai-realtime-chat-app.vercel.app",
+    methods:["GET","POST"]
+  }
 })
 
 // MIDDLEWARE
