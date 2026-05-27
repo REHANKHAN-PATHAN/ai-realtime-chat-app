@@ -51,7 +51,12 @@ navigate("/")
 
 catch(err){
    console.log(err.response?.data)
-   alert(err.response?.data || "Signup failed")
+
+   alert(
+      err.response?.data?.message ||
+      JSON.stringify(err.response?.data) ||
+      "Signup failed"
+   )
 }
 }
 
