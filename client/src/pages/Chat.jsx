@@ -17,7 +17,7 @@ import EmojiPicker
 from "emoji-picker-react"
 
 const socket =
-io(https://ai-chat-backend-h2hy.onrender.com)
+io("https://ai-chat-backend-h2hy.onrender.com")
 
 function Chat(){
 
