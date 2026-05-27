@@ -31,7 +31,7 @@ try{
 const res =
 await axios.post(
 
-"http://localhost:5000/api/auth/login",
+"https://ai-chat-backend-h2hy.onrender.com/api/auth/login",
 
 {
 email,

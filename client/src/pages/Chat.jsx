@@ -17,7 +17,7 @@ import EmojiPicker
 from "emoji-picker-react"
 
 const socket =
-io("http://localhost:5000")
+io(https://ai-chat-backend-h2hy.onrender.com)
 
 function Chat(){
 
@@ -125,7 +125,7 @@ localStorage.getItem("email")
 
 axios.get(
 
-`http://localhost:5000/api/profile/${email}`
+`https://ai-chat-backend-h2hy.onrender.com/api/profile/${email}`
 
 )
 
@@ -156,7 +156,7 @@ useEffect(()=>{
 
 axios.get(
 
-"http://localhost:5000/messages"
+"https://ai-chat-backend-h2hy.onrender.com/messages"
 
 )
 
@@ -423,7 +423,7 @@ selectedFile
 const res =
 await axios.post(
 
-"http://localhost:5000/upload",
+"https://ai-chat-backend-h2hy.onrender.com/upload",
 
 formData
 )
@@ -690,7 +690,7 @@ try{
 const res =
 await axios.post(
 
-"http://localhost:5000/translate",
+"https://ai-chat-backend-h2hy.onrender.com/translate",
 
 {
 
@@ -1131,7 +1131,7 @@ msg.file &&
 
 <a
 
-href={`http://localhost:5000/uploads/${msg.file}`}
+href={`https://ai-chat-backend-h2hy.onrender.com/uploads/${msg.file}`}
 
 target="_blank"
 >
